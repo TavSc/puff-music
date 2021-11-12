@@ -1,0 +1,88 @@
+.\" Manpage for Puff Music.
+.\" Contact https://github.com/TavSc/Puff/issues to correct errors or typos.
+.TH Puff "1" "Nov 2021" "Puff 1.0" "Puff Music Man Page"
+.SH NAME
+Puff_Music \- Music media player script from console
+.SH SYNOPSIS
+.B Puff Music 
+\fI\,--option "value" --option "value"\/\fR  
+.SH DESCRIPTION
+Puff Music is a simple yet useful app to search and play videos from Youtube, directly from your console.
+.SH OPTIONS
+.SS "INFO:"
+.TP
+\fB\-v\ --version\fR Version
+See the actual version of Puff Music.
+.TP
+\fB\-p\ --play\fR Play video
+Plays a video from youtube in your default browser.
+.IP
+Example: \fB\Puff -p\fR\fI\, "Song_name"\fR
+.IP
+Example: \fB\Puff --play\fR\fI\, "Song_name"\fR
+.IP
+\fB\
+NOTE\fR: You need to use this option to use --list and --send, instead of play
+see open(1)
+.TP
+\fB\-o\ --open\fR Open link
+Open a custom link in the default browser.
+.IP
+Example: \fB\Puff -o\fR\fI\, "customized_url" \fR
+.IP
+Example: \fB\Puff -\-open\fR\fI\, "customized_url" \fR
+.TP
+\fB\-s\ --send\fR Send video
+Send a video via email.
+.IP
+Example: \fB\Puff -p\fR\fI\, "Song_name" \fB\-s\fR\fI "youremail@domain.com"\fR
+.IP
+Example: \fB\Puff --play\fR\fI\, "Song_name" \fB\--send\fR\fI "youremail@domain.com"\fR
+.IP
+\fB\
+NOTE\fR: "" Are not necessary in the email.
+.TP
+\fB\-l\ --list\fR Search results
+Displays N search results\fB\ FROM YOUTUBE\fR and pick one to play.
+.IP
+Example: \fB\Puff -p\fR\fI\, "Song_name" \fB\-l INTEGER\fR\fI \fR
+.IP
+Example: \fB\Puff --play\fR\fI\, "Song_name" \fB\--list INTEGER\fR\fI \fR
+.IP
+\fB\
+NOTE\fR: If there is a \fB\--send\fR\ argument, the selected option will be the sended. 
+.TP
+\fB\-n\ --name\fR  NAME
+Change the os name for a custom name in the sended email.
+.IP
+Example: \fB\Puff -p\fR\fI\, "Song_name" \fB\-s\fR\fI "youremail@domain.com"\fB\ -n\fR\fI "NAME"\fR
+.IP
+Example: \fB\Puff --play\fR\fI\, "Song_name" \fB\--send\fR\fI "youremail@domain.com"\fB\ --name\fR\fI "NAME"\fR
+.IP
+\fB\
+NOTE\fR: This only works when you have \fB\--send\fR\ argument before.
+.TP
+\fB\-r\ --record\fR Search record
+See the search_record.txt.
+.TP
+\fB\-f\ --flush\fR Flush
+Remove the search_record.txt from system.
+.TP
+\fB\-h\ --help\fR Help
+Displays usage of Puff Music.
+.SH BUGS
+No known bugs.
+.SH "REPORTING BUGS"
+Report bugs to https://github.com/TavSc/Puff/issues
+.SH AUTHORS
+Luis Blanco
+.TP
+Gustavo Contreras
+.TP
+Alejandro Salas
+.TP
+Gabriel Salom
+.TP
+Alejandro Velazquez
+
+
